@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">OrderFood</string>
+    <string name="slogan_text">Beyond the boundaries of taste</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu">Menu</string>
+    <string name="cart">My Cart</string>
+    <string name="locate_store">Locate Store</string>
+    <string name="gallery">Gallery</string>
+    <string name="profile">Profile</string>
+    <string name="my_orders">My Orders</string>
+    <string name="contach_us">Contact Store</string>
+    <string name="share_app">Share App</string>
+    <string name="rate_us">Rate us on Play Store</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="communicate">Communicate</string>
+    <string name="sign_out">Sign Out</string>
+
+    <string name="sign_up_redirect">Not a Registered User ? Sign Up</string>
+    <string name="sign_in_redirect">Registered User ? Sign In</string>
+    <string name="cart_item_image">cart_item_image</string>
+
+    <string name="snackbar_swipe_to_remove">SWIPE TO REMOVE</string>
+    <string name="snackbar_cleared">CART CLEARED</string>
+    <string name="snackbar_removed">ITEM REMOVED</string>
+    <string name="snackbar_undo">UNDO</string>
+    <string name="place_order">Place Order</string>
+    <string name="clear_cart">Clear Cart</string>
+    <string name="clear_order">Clear Order</string>
+
+    <string name="loading_message">Please wait%#8230</string>
+    <string name="sign_up_success">Sign Up Success</string>
+    <string name="added_to_cart">Added to cart</string>
+</resources>

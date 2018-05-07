@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.pglap.orderfood.SubItemActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/subitem_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/subitem_collapse"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:contentScrim="?attr/colorPrimary"
+            app:titleEnabled="true"
+            app:expandedTitleTextAppearance="@android:color/transparent" >
+
+            <ImageView
+                android:id="@+id/subitem_image"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/subitem_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                tools:title="Food Name" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/subitem_fab_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_shopping_cart"
+        app:backgroundTint="@android:color/white"
+        app:layout_anchor="@id/subitem_app_bar_layout"
+        app:layout_anchorGravity="bottom|right|end"
+        app:useCompatPadding="true"
+        app:pressedTranslationZ="12dp"
+        app:elevation="6dp" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/subitem_nested_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <include layout="@layout/content_sub_item" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
